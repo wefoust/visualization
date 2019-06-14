@@ -1,0 +1,7 @@
+----------------------------------------------------------------------
+Beginning MPAS-atmosphere Error Log File for task      11 of      32
+    Opened at 2019/06/14 10:48:08
+----------------------------------------------------------------------
+
+CRITICAL ERROR: Could not open input file 'x1.40962.init.nc' to read mesh fields
+Logging complete.  Closing file at 2019/06/14 10:48:08
