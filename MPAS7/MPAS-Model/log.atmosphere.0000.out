@@ -1,0 +1,52 @@
+----------------------------------------------------------------------
+Beginning MPAS-atmosphere Output Log File for task       0 of      32
+    Opened at 2019/06/14 10:48:08
+----------------------------------------------------------------------
+
+ 
+ Using default single-precision reals
+ 
+ Reading namelist from file namelist.atmosphere
+ *** Encountered an issue while attempting to read namelist record assimilation
+     The following values will be used for variables in this record:
+ 
+         config_jedi_da = F
+ 
+ 
+ ----- Setting up physics suite 'mesoscale_reference' -----
+ 
+     config_microp_scheme       = mp_wsm6
+     config_convection_scheme   = cu_ntiedtke
+     config_pbl_scheme          = bl_ysu
+     config_gwdo_scheme         = bl_ysu_gwdo
+     config_radt_cld_scheme     = cld_fraction
+     config_radt_lw_scheme      = rrtmg_lw
+     config_radt_sw_scheme      = rrtmg_sw
+     config_sfclayer_scheme     = sf_monin_obukhov
+     config_lsm_scheme          = noah
+ 
+ ----- Setting up package variables -----
+ 
+     mp_kessler_in           = F
+     mp_thompson_in          = F
+     mp_wsm6_in              = T
+     cu_grell_freitas_in     = F
+     cu_kain_fritsch_in      = F
+     cu_tiedtke_in           = T
+     bl_mynn_in              = F
+     bl_ysu_in               = T
+ 
+ Reading streams configuration from file streams.atmosphere
+ Found mesh stream with filename template x1.40962.init.nc
+ Using default io_type for mesh stream
+  ** Attempting to bootstrap MPAS framework using stream: input
+CRITICAL ERROR: Could not open input file 'x1.40962.init.nc' to read mesh fields
+ 
+ -----------------------------------------
+ Total log messages printed:
+    Output messages =                   37
+    Warning messages =                   0
+    Error messages =                     0
+    Critical error messages =            1
+ -----------------------------------------
+ Logging complete.  Closing file at 2019/06/14 10:48:08

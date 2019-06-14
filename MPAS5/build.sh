@@ -10,6 +10,7 @@ module load pio/2.4.1
 module list
 export PIO=/glade/work/jedwards/tools/pio/2.4.1/intel/17.0.1/mpt/2.19/
 
-cd /glade/work/omeara/Testing/MPAS-Model
+cd /glade/work/omeara/visualization/MPAS5/MPAS
+
 make clean CORE=atmosphere
 make ifort CORE=atmosphere USE_PIO2=true PRECISION=single

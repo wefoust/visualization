@@ -1,5 +1,10 @@
 MODEL_FORMULATION = 
 
+PARAVIEW ?= /home/mpas/Desktop/Source/PV/build
+USE_PARAVIEW ?= true
+ifeq "$(USE_PARAVIEW)" "true"
+MODEL_FORMULATION += -DUSE_PARAVIEW
+endif
 
 dummy:
 	( $(MAKE) error )
@@ -498,6 +503,11 @@ ifneq "$(NETCDF)" ""
 	LIBS += $(NCLIB)
 endif
 
+ifeq "$(USE_PARAVIEW)" "true"
+	PARAVIEW_CONFIG = $(PARAVIEW)/bin/paraview-config
+	LIBS += -L/home/mpas/Desktop/Source/PV/build/lib $(shell $(PARAVIEW_CONFIG) --libs --python vtkPVPythonCatalyst vtkPVServerManagerRendering vtkUtilitiesPythonInitializer) -lparaview -Lparaview_catalyst/Adaptor-build -lMPASAdaptor
+endif
+
 RM = rm -f
 CPP = cpp -P -traditional
 RANLIB = ranlib
@@ -775,6 +785,8 @@ endif
                  FCINCLUDES="$(FCINCLUDES)" \
                  CORE="$(CORE)"\
                  AUTOCLEAN="$(AUTOCLEAN)" \
+                 USE_PARAVIEW="$(USE_PARAVIEW)" \
+                 PARAVIEW="$(PARAVIEW)" \
                  GEN_F90="$(GEN_F90)" \
                  NAMELIST_SUFFIX="$(NAMELIST_SUFFIX)" \
                  EXE_NAME="$(EXE_NAME)"
@@ -866,6 +878,7 @@ errmsg:
 	@echo "    TAU=true      - builds version using TAU hooks for profiling. Default is off."
 	@echo "    AUTOCLEAN=true    - forces a clean of infrastructure prior to build new core."
 	@echo "    GEN_F90=true  - Generates intermediate .f90 files through CPP, and builds with them."
+	@echo "    USE_PARAVIEW=true - builds using paraview catalyst, for insitu visualization and analysis."
 	@echo "    TIMER_LIB=opt - Selects the timer library interface to be used for profiling the model. Options are:"
 	@echo "                    TIMER_LIB=native - Uses native built-in timers in MPAS"
 	@echo "                    TIMER_LIB=gptl - Uses gptl for the timer interface instead of the native interface"
@@ -875,8 +888,8 @@ errmsg:
 	@echo "    USE_PIO2=true - links with the PIO 2 library. Default is to use the PIO 1.x library."
 	@echo "    PRECISION=single - builds with default single-precision real kind. Default is to use double-precision."
 	@echo ""
-	@echo "Ensure that NETCDF, PNETCDF, PIO, and PAPI (if USE_PAPI=true) are environment variables"
-	@echo "that point to the absolute paths for the libraries."
+	@echo "Ensure that NETCDF, PNETCDF, PIO, PAPI (if USE_PAPI=true), and PARAVIEW (if USE_PARAVIEW=true)"
+	@echo "are environment variables that point to the absolute paths for the libraries."
 	@echo ""
 ifdef CORE
 	exit 1
