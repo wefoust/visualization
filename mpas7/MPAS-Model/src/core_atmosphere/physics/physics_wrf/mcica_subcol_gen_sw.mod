@@ -1,6 +1,6 @@
 V34 :0x4 mcica_subcol_gen_sw
 20 module_ra_rrtmg_sw.F S624 0
-06/14/2019  09:55:57
+06/17/2019  15:46:36
 use rrsw_vsn public 0 direct
 use rrsw_wvn private
 use rrsw_con private

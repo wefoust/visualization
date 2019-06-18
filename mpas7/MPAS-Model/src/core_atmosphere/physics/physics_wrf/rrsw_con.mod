@@ -1,6 +1,6 @@
 V34 :0x4 rrsw_con
 20 module_ra_rrtmg_sw.F S624 0
-06/14/2019  09:55:57
+06/17/2019  15:46:36
 use parkind private
 enduse
 S 624 24 0 0 0 9 1 0 5015 5 0 A 0 0 0 0 B 0 230 0 0 0 0 0 0 0 0 0 0 270 0 0 0 0 0 0 0 0 230 0 0 0 0 0 0 rrsw_con

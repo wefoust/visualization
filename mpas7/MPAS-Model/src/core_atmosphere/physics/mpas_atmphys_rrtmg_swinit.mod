@@ -1,6 +1,6 @@
 V34 :0x4 mpas_atmphys_rrtmg_swinit
 27 mpas_atmphys_rrtmg_swinit.F S624 0
-06/14/2019  09:56:21
+06/17/2019  15:47:02
 use pio_types private
 use esmf_clockmod private
 use esmf_shrtimemod private

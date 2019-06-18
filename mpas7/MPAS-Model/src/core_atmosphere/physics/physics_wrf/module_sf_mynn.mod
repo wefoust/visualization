@@ -1,6 +1,6 @@
 V34 :0x4 module_sf_mynn
 16 module_sf_mynn.F S624 0
-06/14/2019  09:56:06
+06/17/2019  15:46:45
 use module_sf_sfclay private
 use module_bl_mynn private
 use mpas_constants private

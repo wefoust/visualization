@@ -2,4 +2,4 @@
        core % coreName = 'atmosphere'
        core % modelVersion = '7.0'
        core % executableName = 'atmosphere_model'
-       core % git_version = 'v7.0'
+       core % git_version = 'unknown'

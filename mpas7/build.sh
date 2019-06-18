@@ -12,6 +12,7 @@ done
 module purge
 module load PrgEnv/PGI+OpenMPI/2019-04-30 
 module load pio
+module load paraview
 
 module list
 which mpif90
@@ -27,7 +28,7 @@ export NETCDFF=$NETCDF_F
 
 echo $LD_LIBRARY_PATH
 
-cd /gpfs/fs1/work/omeara/CasperMPAS/MPAS-Model
+cd /gpfs/fs1/work/omeara/visualization/mpas7/MPAS-Model
 
 make clean CORE=atmosphere
-make pgi CORE=atmosphere OPENACC=false PRECISION=single USE_PIO2=true DEBUG=false
+make pgi CORE=atmosphere OPENACC=true PRECISION=single USE_PIO2=true DEBUG=false

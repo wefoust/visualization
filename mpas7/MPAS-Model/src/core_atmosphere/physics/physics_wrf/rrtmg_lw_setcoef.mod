@@ -1,6 +1,6 @@
 V34 :0x4 rrtmg_lw_setcoef
 20 module_ra_rrtmg_lw.F S624 0
-06/14/2019  09:55:51
+06/17/2019  15:46:30
 use rrlw_ref public 0 direct
 use rrlw_vsn private
 use rrlw_wvn private

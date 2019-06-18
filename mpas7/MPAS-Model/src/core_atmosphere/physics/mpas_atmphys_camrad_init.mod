@@ -1,6 +1,6 @@
 V34 :0x4 mpas_atmphys_camrad_init
 26 mpas_atmphys_camrad_init.F S624 0
-06/14/2019  09:56:09
+06/17/2019  15:46:48
 use pio_types private
 use esmf_clockmod private
 use esmf_shrtimemod private

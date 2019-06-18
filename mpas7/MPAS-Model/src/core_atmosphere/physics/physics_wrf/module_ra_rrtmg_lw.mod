@@ -1,6 +1,6 @@
 V34 :0x4 module_ra_rrtmg_lw
 20 module_ra_rrtmg_lw.F S624 0
-06/14/2019  09:55:51
+06/17/2019  15:46:30
 use mcica_subcol_gen_lw private
 use rrtmg_lw_rad private
 use rrtmg_lw_init private

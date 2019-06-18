@@ -1,6 +1,6 @@
 V34 :0x4 rrtmg_sw_spcvmc
 20 module_ra_rrtmg_sw.F S624 0
-06/14/2019  09:55:57
+06/17/2019  15:46:36
 use rrtmg_sw_vrtqdr private
 use rrtmg_sw_taumol private
 use rrtmg_sw_reftra private

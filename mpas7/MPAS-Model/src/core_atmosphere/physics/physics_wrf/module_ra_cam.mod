@@ -1,6 +1,6 @@
 V34 :0x4 module_ra_cam
 15 module_ra_cam.F S624 0
-06/14/2019  09:55:45
+06/17/2019  15:46:25
 use mpas_atmphys_utilities public 0 indirect
 use module_ra_cam_support public 0 direct
 enduse
