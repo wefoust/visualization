@@ -14,7 +14,7 @@ endif
 
 all: mpas
 
-mpas: $(AUTOCLEAN_DEPS) externals frame ops dycore drver
+mpas: $(AUTOCLEAN_DEPS) externals frame paraview ops dycore drver
 	$(LINKER) $(LDFLAGS) -o $(EXE_NAME) driver/*.o -L. -ldycore -lops -lframework $(LIBS) -I./external/esmf_time_f90 -L./external/esmf_time_f90 -lesmf_time
 
 externals: $(AUTOCLEAN_DEPS)
@@ -25,11 +25,15 @@ drver:  $(AUTOCLEAN_DEPS) externals frame ops dycore
 endif
 
 build_tools: externals
-	(cd tools; $(MAKE) CPPFLAGS="$(CPPFLAGS)" CC="$(SCC)" CFLAGS="$(CFLAGS)")
+	(cd tools; $(MAKE) CPPFLAGS="$(CPPFLAGS)" CC="$(SCC)" CFLAGS="-O")
 
 frame: $(AUTOCLEAN_DEPS) externals
 	( cd framework; $(MAKE) CPPFLAGS="$(CPPFLAGS)" CPPINCLUDES="$(CPPINCLUDES)" all ) 
 	ln -sf framework/libframework.a libframework.a
+
+paraview: $(AUTOCLEAN_DEPS) frame
+	( cd paraview_catalyst; $(MAKE) CPPFLAGS="$(CPPFLAGS)" CPPINCLUDES="$(CPPINCLUDES)" all ) 
+	ln -sf paraview_catalyst/libparaview.a libparaview.a
 
 ops: $(AUTOCLEAN_DEPS) externals frame
 	( cd operators; $(MAKE) CPPFLAGS="$(CPPFLAGS)" CPPINCLUDES="$(CPPINCLUDES)" all ) 

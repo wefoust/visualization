@@ -1,6 +1,6 @@
 V34 :0x4 module_cu_tiedtke
 19 module_cu_tiedtke.F S624 0
-06/17/2019  15:46:09
+06/20/2019  14:17:24
 use mpas_atmphys_constants private
 use mpas_constants private
 enduse

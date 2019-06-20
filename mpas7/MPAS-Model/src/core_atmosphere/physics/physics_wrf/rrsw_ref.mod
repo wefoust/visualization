@@ -1,6 +1,6 @@
 V34 :0x4 rrsw_ref
 20 module_ra_rrtmg_sw.F S624 0
-06/17/2019  15:46:36
+06/20/2019  14:17:53
 use parkind private
 enduse
 D 58 23 9 1 3 17 0 0 0 0 0

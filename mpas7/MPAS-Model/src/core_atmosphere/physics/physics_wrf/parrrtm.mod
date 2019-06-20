@@ -1,6 +1,6 @@
 V34 :0x4 parrrtm
 20 module_ra_rrtmg_lw.F S624 0
-06/17/2019  15:46:30
+06/20/2019  14:17:47
 use parkind private
 enduse
 S 624 24 0 0 0 9 1 0 5015 5 0 A 0 0 0 0 B 0 55 0 0 0 0 0 0 0 0 0 0 165 0 0 0 0 0 0 0 0 55 0 0 0 0 0 0 parrrtm

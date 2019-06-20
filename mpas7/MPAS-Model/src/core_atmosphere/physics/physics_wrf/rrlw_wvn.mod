@@ -1,6 +1,6 @@
 V34 :0x4 rrlw_wvn
 20 module_ra_rrtmg_lw.F S624 0
-06/17/2019  15:46:30
+06/20/2019  14:17:47
 use parrrtm private
 use parkind private
 enduse
