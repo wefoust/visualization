@@ -27,6 +27,8 @@ module atm_core
       use mpas_atm_diagnostics_manager, only : mpas_atm_diag_setup
       use mpas_atm_threading, only : mpas_atm_threading_init
 
+      use mpas_paraview_catalyst
+
       implicit none
 
       type (domain_type), intent(inout) :: domain
@@ -187,6 +189,9 @@ module atm_core
 
       call mpas_atm_diag_setup(domain % streamManager, domain % blocklist % configs, &
                                domain % blocklist % structs, domain % clock, domain % dminfo)
+
+      ! Initialize insitu coprocessing
+      call mpas_insitu_initialize
 
    end function atm_core_init
 
@@ -484,6 +489,8 @@ module atm_core
       use mpas_atm_boundaries, only : mpas_atm_update_bdy_tend
       use mpas_atm_diagnostics_manager, only : mpas_atm_diag_update, mpas_atm_diag_compute, mpas_atm_diag_reset
    
+      use mpas_paraview_catalyst
+
       implicit none
    
       type (domain_type), intent(inout) :: domain
@@ -536,6 +543,7 @@ module atm_core
 
       if (MPAS_stream_mgr_ringing_alarms(domain % streamManager, direction=MPAS_STREAM_OUTPUT, ierr=ierr)) then
          block_ptr => domain % blocklist
+         call mpas_insitu_create_geometry(domain)
          do while (associated(block_ptr))
             call mpas_pool_get_subpool(block_ptr % structs, 'state', state)
             call mpas_pool_get_subpool(block_ptr % structs, 'diag', diag)
@@ -696,7 +704,7 @@ module atm_core
               block_ptr => block_ptr % next
            end do
          end if
-
+         call mpas_insitu_coprocess(domain, itimestep)
          call mpas_atm_diag_update()
          call mpas_atm_diag_compute()
          call mpas_dmpar_get_time(diag_stop_time)
@@ -881,7 +889,8 @@ module atm_core
       use mpas_timekeeping
       use mpas_atm_diagnostics_manager, only : mpas_atm_diag_cleanup
       use mpas_atm_threading, only : mpas_atm_threading_finalize
-   
+      use mpas_paraview_catalyst
+
 #ifdef DO_PHYSICS
       use mpas_atmphys_finalize
 #endif
@@ -901,6 +910,7 @@ module atm_core
 
       call mpas_destroy_clock(clock, ierr)
       call mpas_decomp_destroy_decomp_list(domain % decompositions)
+      call mpas_insitu_finalize
 
 #ifdef DO_PHYSICS
          block_ptr => domain % blocklist
