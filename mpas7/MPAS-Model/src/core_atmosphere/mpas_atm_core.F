@@ -19,7 +19,7 @@ module atm_core
 
 
    function atm_core_init(domain, startTimeStamp) result(ierr)
-
+      use mpas_paraview_catalyst
       use mpas_timekeeping
       use mpas_kind_types
       use mpas_stream_manager
@@ -27,7 +27,7 @@ module atm_core
       use mpas_atm_diagnostics_manager, only : mpas_atm_diag_setup
       use mpas_atm_threading, only : mpas_atm_threading_init
 
-      use mpas_paraview_catalyst
+      !use mpas_paraview_catalyst
 
       implicit none
 
@@ -480,7 +480,7 @@ module atm_core
    
    
    function atm_core_run(domain) result(ierr)
-   
+      use mpas_paraview_catalyst 
       use mpas_timekeeping
       use mpas_kind_types
       use mpas_stream_manager
@@ -489,7 +489,7 @@ module atm_core
       use mpas_atm_boundaries, only : mpas_atm_update_bdy_tend
       use mpas_atm_diagnostics_manager, only : mpas_atm_diag_update, mpas_atm_diag_compute, mpas_atm_diag_reset
    
-      use mpas_paraview_catalyst
+      !use mpas_paraview_catalyst
 
       implicit none
    
@@ -884,12 +884,12 @@ module atm_core
    
    
    function atm_core_finalize(domain) result(ierr)
-   
+      use mpas_paraview_catalyst  
       use mpas_decomp
       use mpas_timekeeping
       use mpas_atm_diagnostics_manager, only : mpas_atm_diag_cleanup
       use mpas_atm_threading, only : mpas_atm_threading_finalize
-      use mpas_paraview_catalyst
+      !use mpas_paraview_catalyst
 
 #ifdef DO_PHYSICS
       use mpas_atmphys_finalize
