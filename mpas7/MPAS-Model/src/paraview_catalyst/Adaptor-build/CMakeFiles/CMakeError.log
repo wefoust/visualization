@@ -1,0 +1,384 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpicc 
+Build flags: -O3;-DSINGLE_PRECISION
+Id flags:  
+
+The output was:
+1
+pgcc-Error-Unknown switch: -pthread
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpicc 
+Build flags: -O3;-DSINGLE_PRECISION
+Id flags: -c 
+
+The output was:
+1
+pgcc-Error-Unknown switch: -pthread
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpicc 
+Build flags: -O3;-DSINGLE_PRECISION
+Id flags: -Aa 
+
+The output was:
+1
+pgcc-Error-Unknown switch: -Aa
+pgcc-Error-Unknown switch: -pthread
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpicc 
+Build flags: -O3;-DSINGLE_PRECISION
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+pgcc-Error-Unknown switch: -pthread
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpicc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+pgcc-Error-Unknown switch: -pthread
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpicc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+pgcc-Error-Unknown switch: -pthread
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpicc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+1
+pgcc-Error-Unknown switch: -Aa
+pgcc-Error-Unknown switch: -pthread
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpicc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+pgcc-Error-Unknown switch: -pthread
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+pgcc-Warning-No files to process
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+pgcc-Warning-No files to process
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpic++ 
+Build flags: -O3;-DSINGLE_PRECISION
+Id flags:  
+
+The output was:
+1
+pgc++-Error-Unknown switch: -pthread
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpic++ 
+Build flags: -O3;-DSINGLE_PRECISION
+Id flags: -c 
+
+The output was:
+1
+pgc++-Error-Unknown switch: -pthread
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpic++ 
+Build flags: -O3;-DSINGLE_PRECISION
+Id flags: --c++ 
+
+The output was:
+1
+pgc++-Error-Unknown switch: -pthread
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpic++ 
+Build flags: -O3;-DSINGLE_PRECISION
+Id flags: --ec++ 
+
+The output was:
+1
+pgc++-Error-Unknown switch: --ec++
+pgc++-Error-Unknown switch: -pthread
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpic++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+pgc++-Error-Unknown switch: -pthread
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpic++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+pgc++-Error-Unknown switch: -pthread
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpic++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+pgc++-Error-Unknown switch: -pthread
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpic++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+pgc++-Error-Unknown switch: --ec++
+pgc++-Error-Unknown switch: -pthread
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+pgc++-Warning-No files to process
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+pgc++-Warning-No files to process
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /gpfs/fs1/work/omeara/visualization/mpas7/MPAS-Model/src/paraview_catalyst/Adaptor-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_c5dd8/fast 
+gmake[4]: Entering directory `/gpfs/fs1/work/omeara/visualization/mpas7/MPAS-Model/src/paraview_catalyst/Adaptor-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_c5dd8.dir/build.make CMakeFiles/cmTC_c5dd8.dir/build
+gmake[5]: Entering directory `/gpfs/fs1/work/omeara/visualization/mpas7/MPAS-Model/src/paraview_catalyst/Adaptor-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c5dd8.dir/testCCompiler.c.o
+/glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpicc   -O3 -DSINGLE_PRECISION    -o CMakeFiles/cmTC_c5dd8.dir/testCCompiler.c.o   -c /gpfs/fs1/work/omeara/visualization/mpas7/MPAS-Model/src/paraview_catalyst/Adaptor-build/CMakeFiles/CMakeTmp/testCCompiler.c
+pgcc-Error-Unknown switch: -pthread
+gmake[5]: *** [CMakeFiles/cmTC_c5dd8.dir/testCCompiler.c.o] Error 1
+gmake[5]: Leaving directory `/gpfs/fs1/work/omeara/visualization/mpas7/MPAS-Model/src/paraview_catalyst/Adaptor-build/CMakeFiles/CMakeTmp'
+gmake[4]: *** [cmTC_c5dd8/fast] Error 2
+gmake[4]: Leaving directory `/gpfs/fs1/work/omeara/visualization/mpas7/MPAS-Model/src/paraview_catalyst/Adaptor-build/CMakeFiles/CMakeTmp'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpicc 
+Build flags: -O3;-DSINGLE_PRECISION
+Id flags:  
+
+The output was:
+1
+pgcc-Error-Unknown switch: -pthread
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpicc 
+Build flags: -O3;-DSINGLE_PRECISION
+Id flags: -c 
+
+The output was:
+1
+pgcc-Error-Unknown switch: -pthread
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpicc 
+Build flags: -O3;-DSINGLE_PRECISION
+Id flags: -Aa 
+
+The output was:
+1
+pgcc-Error-Unknown switch: -Aa
+pgcc-Error-Unknown switch: -pthread
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpicc 
+Build flags: -O3;-DSINGLE_PRECISION
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+pgcc-Error-Unknown switch: -pthread
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpicc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+pgcc-Error-Unknown switch: -pthread
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpicc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+pgcc-Error-Unknown switch: -pthread
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpicc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+1
+pgcc-Error-Unknown switch: -Aa
+pgcc-Error-Unknown switch: -pthread
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpicc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+pgcc-Error-Unknown switch: -pthread
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+pgcc-Warning-No files to process
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+pgcc-Warning-No files to process
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpic++ 
+Build flags: -O3;-DSINGLE_PRECISION
+Id flags:  
+
+The output was:
+1
+pgc++-Error-Unknown switch: -pthread
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpic++ 
+Build flags: -O3;-DSINGLE_PRECISION
+Id flags: -c 
+
+The output was:
+1
+pgc++-Error-Unknown switch: -pthread
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpic++ 
+Build flags: -O3;-DSINGLE_PRECISION
+Id flags: --c++ 
+
+The output was:
+1
+pgc++-Error-Unknown switch: -pthread
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpic++ 
+Build flags: -O3;-DSINGLE_PRECISION
+Id flags: --ec++ 
+
+The output was:
+1
+pgc++-Error-Unknown switch: --ec++
+pgc++-Error-Unknown switch: -pthread
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpic++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+pgc++-Error-Unknown switch: -pthread
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpic++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+pgc++-Error-Unknown switch: -pthread
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpic++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+pgc++-Error-Unknown switch: -pthread
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpic++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+pgc++-Error-Unknown switch: --ec++
+pgc++-Error-Unknown switch: -pthread
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+pgc++-Warning-No files to process
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+pgc++-Warning-No files to process
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /gpfs/fs1/work/omeara/visualization/mpas7/MPAS-Model/src/paraview_catalyst/Adaptor-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_1df3a/fast 
+gmake[4]: Entering directory `/gpfs/fs1/work/omeara/visualization/mpas7/MPAS-Model/src/paraview_catalyst/Adaptor-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_1df3a.dir/build.make CMakeFiles/cmTC_1df3a.dir/build
+gmake[5]: Entering directory `/gpfs/fs1/work/omeara/visualization/mpas7/MPAS-Model/src/paraview_catalyst/Adaptor-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1df3a.dir/testCCompiler.c.o
+/glade/u/apps/dav/opt/openmpi/3.1.4/gnu/7.4.0/bin/mpicc   -O3 -DSINGLE_PRECISION    -o CMakeFiles/cmTC_1df3a.dir/testCCompiler.c.o   -c /gpfs/fs1/work/omeara/visualization/mpas7/MPAS-Model/src/paraview_catalyst/Adaptor-build/CMakeFiles/CMakeTmp/testCCompiler.c
+pgcc-Error-Unknown switch: -pthread
+gmake[5]: *** [CMakeFiles/cmTC_1df3a.dir/testCCompiler.c.o] Error 1
+gmake[5]: Leaving directory `/gpfs/fs1/work/omeara/visualization/mpas7/MPAS-Model/src/paraview_catalyst/Adaptor-build/CMakeFiles/CMakeTmp'
+gmake[4]: *** [cmTC_1df3a/fast] Error 2
+gmake[4]: Leaving directory `/gpfs/fs1/work/omeara/visualization/mpas7/MPAS-Model/src/paraview_catalyst/Adaptor-build/CMakeFiles/CMakeTmp'
+
+
