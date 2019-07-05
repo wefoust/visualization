@@ -35,7 +35,7 @@ using namespace std;
 
 namespace MPAS
 {
-  int rank;
+  int ranks;
   int totalRank;
 
   // Parameters from MPAS renamed for primal mesh use
@@ -124,7 +124,7 @@ extern "C" void coprocessor_create_grid_(
                            int* verticesOnCell_,
                            int* cellMask_)
 {
-  MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+  MPI_Comm_rank(MPI_COMM_WORLD, &ranks);
   MPI_Comm_size(MPI_COMM_WORLD, &totalRank);
 
   nEdgesOnCell = nEdgesOnCell_;
