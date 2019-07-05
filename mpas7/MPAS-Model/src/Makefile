@@ -15,7 +15,7 @@ endif
 all: mpas
 
 mpas: $(AUTOCLEAN_DEPS) externals frame paraview ops dycore drver
-	$(LINKER) $(LDFLAGS) -o $(EXE_NAME) driver/*.o -L. -ldycore -lops -lframework $(LIBS) -I./external/esmf_time_f90 -L./external/esmf_time_f90 -lesmf_time
+	$(LINKER) $(LDFLAGS) -o $(EXE_NAME) driver/*.o -L. -ldycore -lops -lframework $(LIBS) -I./external/esmf_time_f90 -L./external/esmf_time_f90 -lesmf_time -L./paraview_catalyst -lparaview -L./paraview_catalyst/Adaptor-build -lMPASAdaptor
 
 externals: $(AUTOCLEAN_DEPS)
 	( cd external; $(MAKE) FC="$(FC)" SFC="$(SFC)" CC="$(CC)" SCC="$(SCC)" FFLAGS="$(FFLAGS)" CFLAGS="$(CFLAGS)" CPP="$(CPP)" NETCDF="$(NETCDF)" CORE="$(CORE)" all )
@@ -68,3 +68,4 @@ endif
 	( cd framework; $(MAKE) clean )
 	( cd operators; $(MAKE) clean )
 	( cd driver; $(MAKE) clean )
+	#( cd paraview_catalyst; $(MAKE) clean)
