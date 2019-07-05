@@ -68,4 +68,4 @@ endif
 	( cd framework; $(MAKE) clean )
 	( cd operators; $(MAKE) clean )
 	( cd driver; $(MAKE) clean )
-	#( cd paraview_catalyst; $(MAKE) clean)
+	( cd paraview_catalyst; $(MAKE) clean)
