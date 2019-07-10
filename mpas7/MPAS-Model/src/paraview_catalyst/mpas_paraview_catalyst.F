@@ -54,7 +54,8 @@ module mpas_paraview_catalyst
 
       !type (mpas_pool_type), pointer :: diagnosticsPool !!!!!
       !real(kind=RKIND),dimension(:),pointer:: skintemp
-      real (kind=RKIND), dimension(:,:), pointer :: pressure, theta
+      real (kind=RKIND), dimension(:,:), pointer :: pressure, theta, exner
+      real (kind=RKIND), dimension(:,:), pointer :: temperature
       block => domain % blocklist
 
       call mpas_pool_get_subpool(domain % blocklist % structs, 'state', state)
@@ -213,17 +214,19 @@ module mpas_paraview_catalyst
 !                Time" units="K"
 !                     description="Potential temperature"/>
       call mpas_pool_get_array(diag, 'theta', theta)
-      
+      call mpas_pool_get_array(diag, 'exner', exner)
       call mpas_pool_get_array(diag, 'pressure', pressure)
+      
+      temperature=theta*exner
 
       call coprocessor_register_data( &
-                        'theta', & !theta name
-                        size(theta,dim=1), & !theta dimension1   size(theta,dim=1)???
-                        size(theta,dim=2), & !theta dimension2
-                        theta) !actual data
+                        'temperature', & !variable name
+                        size(theta,dim=1), & !dimension1   size(theta,dim=1)???
+                        size(theta,dim=2), & !dimension2
+                        temperature) !actual data
 
       call coprocessor_register_data( &
-                        'pressure', &
+                        'pressure', & !in Pascals
                         size(pressure,dim=1), &
                         size(pressure,dim=2), &
                         pressure)
@@ -245,7 +248,9 @@ module mpas_paraview_catalyst
       !integer :: indexT, indexS, numTracers
       !real (kind=RKIND), dimension(:,:,:), pointer :: tracers
       !type (mpas_pool_type), pointer :: diagnosticsPool !!!!!
-      real (kind=RKIND), dimension(:,:), pointer :: pressure, theta
+      type (mpas_pool_type), pointer :: diag
+      real (kind=RKIND), dimension(:,:), pointer :: pressure, theta, exner
+      real (kind=RKIND), dimension(:,:), pointer :: temperature 
       block => domain % blocklist
 
       !tracers => block % state % time_levs(2) % state % tracers % array
@@ -268,17 +273,22 @@ module mpas_paraview_catalyst
 !                       block % diagnostics % density % dimSizes(1), &
 !                       block % diagnostics % density % dimSizes(2), &
 !                       block % diagnostics % density % array)
-
+      call mpas_pool_get_array(diag, 'theta', theta)
+      call mpas_pool_get_array(diag, 'exner', exner)
+      call mpas_pool_get_array(diag, 'pressure', pressure)
+      
+      temperature=theta*exner
+      
       call coprocessor_add_data( &
-                        theta, & !theta name
-                        theta, & !theta dimension1
-                        theta, & !theta dimension2
-                        theta) !actual data
+                        'temperature', & !variable name
+                        size(theta,dim=1), & !dimension1   size(theta,dim=1)???
+                        size(theta,dim=2), & !dimension2
+                        temperature) !actual data
 
-      call coprocessor_add_data( &
-                        pressure, &
-                        pressure, &
-                        pressure, &
+      call coprocessor_register_data( &
+                        'pressure', & !in Pascals
+                        size(pressure,dim=1), &
+                        size(pressure,dim=2), &
                         pressure)
 
 
