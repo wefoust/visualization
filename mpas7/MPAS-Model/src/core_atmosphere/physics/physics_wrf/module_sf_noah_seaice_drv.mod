@@ -1,6 +1,6 @@
 V34 :0x4 module_sf_noah_seaice_drv
 27 module_sf_noah_seaice_drv.F S624 0
-06/20/2019  14:18:07
+07/09/2019  11:27:40
 use module_sf_noah_seaice public 0 direct
 use mpas_atmphys_utilities private
 enduse

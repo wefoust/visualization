@@ -6,7 +6,7 @@ PHYSICS=-DDO_PHYSICS
 OBJS = mpas_atm_core.o \
        mpas_atm_core_interface.o \
        mpas_atm_dimensions.o \
-       mpas_atm_threading.o
+       mpas_atm_threading.o  
 
 all: physcore dycore diagcore atmcore utilities
 

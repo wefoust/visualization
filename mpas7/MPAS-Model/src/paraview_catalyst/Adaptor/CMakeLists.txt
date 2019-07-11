@@ -1,5 +1,12 @@
-cmake_minimum_required(VERSION 2.8.8)
+cmake_minimum_required(VERSION 3.14.5)
 project(MPASAdaptor)
+
+#set(CMAKE_CXX_STANDARD 98)
+#set(CMAKE_CXX_STANDARD_REQUIRED ON)
+#set(CMAKE_CXX_EXTENSIONS OFF)
+#add_compile_definitions(-D_GLIBCXX_USE_CXX11_ABI=0)
+
+#set(D_GLIBCXX_USE_CXX11_ABI,"0")
 
 find_package(ParaView REQUIRED COMPONENTS vtkPVCatalyst vtkPVPythonCatalyst)
 include(${PARAVIEW_USE_FILE})

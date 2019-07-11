@@ -1,6 +1,6 @@
 V34 :0x4 rrtmg_sw_rad
 20 module_ra_rrtmg_sw.F S624 0
-06/20/2019  14:17:53
+07/09/2019  11:27:26
 use rrsw_vsn public 0 direct
 use rrtmg_sw_spcvmc private
 use rrtmg_sw_setcoef private

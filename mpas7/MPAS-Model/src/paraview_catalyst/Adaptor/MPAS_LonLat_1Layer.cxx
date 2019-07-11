@@ -108,7 +108,7 @@ void create_lonlat2D_grids(vtkCPDataDescription* data,
     pgrid->GetCellData()->AddArray(rankarr);
 
     for (int id = 0; id < nPrimalCells; id++)
-      rankarr->InsertNextValue((float) rank);
+      rankarr->InsertNextValue((float) ranks);
     rankarr->Delete();
 
     pPts->Delete();
@@ -166,7 +166,7 @@ void create_lonlat2D_grids(vtkCPDataDescription* data,
     dgrid->GetCellData()->AddArray(drankarr);
 
     for (int id = 0; id < nActualDualCells; id++)
-      drankarr->InsertNextValue((float) rank);
+      drankarr->InsertNextValue((float) ranks);
     drankarr->Delete();
 
     dPts->Delete();

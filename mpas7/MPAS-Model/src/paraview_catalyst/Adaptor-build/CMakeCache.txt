@@ -18,7 +18,7 @@
 BUILD_SHARED_LIBS:BOOL=ON
 
 //Path to a program.
-CMAKE_AR:FILEPATH=/usr/bin/ar
+CMAKE_AR:FILEPATH=/bin/ar
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
@@ -28,15 +28,15 @@ CMAKE_BUILD_TYPE:STRING=
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //No help, variable specified on the command line.
-CMAKE_CXX_COMPILER:UNINITIALIZED=/glade/u/apps/dav/opt/gnu/7.3.0/bin/g++
+CMAKE_CXX_COMPILER:UNINITIALIZED=/bin/g++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_CXX_COMPILER_AR:FILEPATH=/glade/u/apps/dav/opt/gnu/7.3.0/bin/gcc-ar
+CMAKE_CXX_COMPILER_AR:FILEPATH=/bin/gcc-ar
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/glade/u/apps/dav/opt/gnu/7.3.0/bin/gcc-ranlib
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/bin/gcc-ranlib
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=-O2
@@ -54,30 +54,30 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //No help, variable specified on the command line.
-CMAKE_C_COMPILER:UNINITIALIZED=/glade/u/apps/dav/opt/gnu/7.3.0/bin/gcc
+CMAKE_C_COMPILER:UNINITIALIZED=/bin/gcc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_AR:FILEPATH=/glade/u/apps/dav/opt/gnu/7.3.0/bin/gcc-ar
+CMAKE_C_COMPILER_AR:FILEPATH=/bin/gcc-ar
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_RANLIB:FILEPATH=/glade/u/apps/dav/opt/gnu/7.3.0/bin/gcc-ranlib
+CMAKE_C_COMPILER_RANLIB:FILEPATH=/bin/gcc-ranlib
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=-O2
 
 //Flags used by the C compiler during DEBUG builds.
-CMAKE_C_FLAGS_DEBUG:STRING=
+CMAKE_C_FLAGS_DEBUG:STRING=-g
 
 //Flags used by the C compiler during MINSIZEREL builds.
-CMAKE_C_FLAGS_MINSIZEREL:STRING=
+CMAKE_C_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
 
 //Flags used by the C compiler during RELEASE builds.
-CMAKE_C_FLAGS_RELEASE:STRING=
+CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 
 //Flags used by the C compiler during RELWITHDEBINFO builds.
-CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=
+CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //Flags used by the linker during all build types.
 CMAKE_EXE_LINKER_FLAGS:STRING=-O3
@@ -98,15 +98,15 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=OFF
 
 //No help, variable specified on the command line.
-CMAKE_Fortran_COMPILER:UNINITIALIZED=/glade/u/apps/dav/opt/gnu/7.3.0/bin/gfortran
+CMAKE_Fortran_COMPILER:UNINITIALIZED=/bin/gfortran
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_Fortran_COMPILER_AR:FILEPATH=/glade/u/apps/dav/opt/gnu/7.3.0/bin/gcc-ar
+CMAKE_Fortran_COMPILER_AR:FILEPATH=/bin/gcc-ar
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_Fortran_COMPILER_RANLIB:FILEPATH=/glade/u/apps/dav/opt/gnu/7.3.0/bin/gcc-ranlib
+CMAKE_Fortran_COMPILER_RANLIB:FILEPATH=/bin/gcc-ranlib
 
 //Flags used by the Fortran compiler during all build types.
 CMAKE_Fortran_FLAGS:STRING=-O2
@@ -127,7 +127,7 @@ CMAKE_Fortran_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 CMAKE_INSTALL_PREFIX:PATH=/usr/local
 
 //Path to a program.
-CMAKE_LINKER:FILEPATH=/usr/bin/ld
+CMAKE_LINKER:FILEPATH=/bin/ld
 
 //Path to a program.
 CMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/gmake
@@ -153,13 +153,13 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_NM:FILEPATH=/usr/bin/nm
+CMAKE_NM:FILEPATH=/bin/nm
 
 //Path to a program.
-CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
+CMAKE_OBJCOPY:FILEPATH=/bin/objcopy
 
 //Path to a program.
-CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
+CMAKE_OBJDUMP:FILEPATH=/bin/objdump
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -171,7 +171,7 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 CMAKE_PROJECT_NAME:STATIC=MPASAdaptor
 
 //Path to a program.
-CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
+CMAKE_RANLIB:FILEPATH=/bin/ranlib
 
 //Flags used by the linker during the creation of shared libraries
 // during all build types.
@@ -221,7 +221,7 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_STRIP:FILEPATH=/usr/bin/strip
+CMAKE_STRIP:FILEPATH=/bin/strip
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
@@ -236,10 +236,10 @@ MPASAdaptor_BINARY_DIR:STATIC=/gpfs/fs1/work/omeara/visualization/mpas7/MPAS-Mod
 MPASAdaptor_SOURCE_DIR:STATIC=/gpfs/fs1/work/omeara/visualization/mpas7/MPAS-Model/src/paraview_catalyst/Adaptor
 
 //No help, variable specified on the command line.
-MPI_C_INCLUDE_PATH:UNINITIALIZED=/glade/u/apps/dav/opt/openmpi/3.1.2/gnu/7.3.0/include
+MPI_C_INCLUDE_PATH:UNINITIALIZED=/glade/work/cponder/SHARE/Utils/OpenMPI/3.1.4/PGI-19.4_CUDA-10.1.105.0_418.39_HWLoc-1.11.12_ZLib-1.2.11/include/
 
 //No help, variable specified on the command line.
-MPI_C_LIBRARIES:UNINITIALIZED=/glade/u/apps/dav/opt/openmpi/3.1.2/gnu/7.3.0/lib/libmpi.so
+MPI_C_LIBRARIES:UNINITIALIZED=/glade/work/cponder/SHARE/Utils/OpenMPI/3.1.4/PGI-19.4_CUDA-10.1.105.0_418.39_HWLoc-1.11.12_ZLib-1.2.11/lib/libmpi.so
 
 //No help, variable specified on the command line.
 PARAVIEW_ENABLE_CATALYST:UNINITIALIZED=ON
@@ -273,9 +273,6 @@ Qt5_DIR:PATH=/usr/lib64/cmake/Qt5
 
 //The directory containing a CMake configuration file for VTKm.
 VTKm_DIR:PATH=/glade/work/cponder/Applications/ParaView_pgi/build/VTK/ThirdParty/vtkm/vtk-m/lib/cmake/paraview-5.6/vtkm
-
-//No help, variable specified on the command line.
-_GLIBCXX_USE_CXX11_ABI:UNINITIALIZED=0
 
 
 ########################
@@ -335,7 +332,7 @@ CMAKE_C_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //Path to cache edit program executable.
 CMAKE_EDIT_COMMAND:INTERNAL=/glade/work/omeara/Downloads/cmake-3.14.5/bin/ccmake
 //Executable file format
-CMAKE_EXECUTABLE_FORMAT:INTERNAL=Unknown
+CMAKE_EXECUTABLE_FORMAT:INTERNAL=ELF
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS
 CMAKE_EXE_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_DEBUG

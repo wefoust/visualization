@@ -1,15 +1,15 @@
 Performing C SOURCE FILE Test C_SUPPORTS_DOLLAR succeeded with the following output:
 Change Dir: /gpfs/fs1/work/omeara/visualization/mpas7/MPAS-Model/src/paraview_catalyst/Adaptor-build/CMakeFiles/FortranCInterface/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_6f260/fast 
+Run Build Command(s):/usr/bin/gmake cmTC_ea492/fast 
 gmake[4]: Entering directory `/gpfs/fs1/work/omeara/visualization/mpas7/MPAS-Model/src/paraview_catalyst/Adaptor-build/CMakeFiles/FortranCInterface/CMakeFiles/CMakeTmp'
-/usr/bin/gmake -f CMakeFiles/cmTC_6f260.dir/build.make CMakeFiles/cmTC_6f260.dir/build
+/usr/bin/gmake -f CMakeFiles/cmTC_ea492.dir/build.make CMakeFiles/cmTC_ea492.dir/build
 gmake[5]: Entering directory `/gpfs/fs1/work/omeara/visualization/mpas7/MPAS-Model/src/paraview_catalyst/Adaptor-build/CMakeFiles/FortranCInterface/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6f260.dir/src.c.o
-/glade/u/apps/dav/opt/gnu/7.3.0/bin/gcc   -O2 -DC_SUPPORTS_DOLLAR   -o CMakeFiles/cmTC_6f260.dir/src.c.o   -c /gpfs/fs1/work/omeara/visualization/mpas7/MPAS-Model/src/paraview_catalyst/Adaptor-build/CMakeFiles/FortranCInterface/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_6f260
-/glade/work/omeara/Downloads/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f260.dir/link.txt --verbose=1
-/glade/u/apps/dav/opt/gnu/7.3.0/bin/gcc -O2 -DC_SUPPORTS_DOLLAR  -O3  CMakeFiles/cmTC_6f260.dir/src.c.o  -o cmTC_6f260 
+Building C object CMakeFiles/cmTC_ea492.dir/src.c.o
+/bin/gcc   -O2 -DC_SUPPORTS_DOLLAR   -o CMakeFiles/cmTC_ea492.dir/src.c.o   -c /gpfs/fs1/work/omeara/visualization/mpas7/MPAS-Model/src/paraview_catalyst/Adaptor-build/CMakeFiles/FortranCInterface/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_ea492
+/glade/work/omeara/Downloads/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea492.dir/link.txt --verbose=1
+/bin/gcc -O2 -DC_SUPPORTS_DOLLAR  -O3  CMakeFiles/cmTC_ea492.dir/src.c.o  -o cmTC_ea492 
 gmake[5]: Leaving directory `/gpfs/fs1/work/omeara/visualization/mpas7/MPAS-Model/src/paraview_catalyst/Adaptor-build/CMakeFiles/FortranCInterface/CMakeFiles/CMakeTmp'
 gmake[4]: Leaving directory `/gpfs/fs1/work/omeara/visualization/mpas7/MPAS-Model/src/paraview_catalyst/Adaptor-build/CMakeFiles/FortranCInterface/CMakeFiles/CMakeTmp'
 

@@ -1,17 +1,17 @@
-set(CMAKE_Fortran_COMPILER "/glade/u/apps/dav/opt/gnu/7.3.0/bin/gfortran")
+set(CMAKE_Fortran_COMPILER "/bin/gfortran")
 set(CMAKE_Fortran_COMPILER_ARG1 "")
 set(CMAKE_Fortran_COMPILER_ID "GNU")
-set(CMAKE_Fortran_COMPILER_VERSION "7.3.0")
+set(CMAKE_Fortran_COMPILER_VERSION "4.8.5")
 set(CMAKE_Fortran_COMPILER_WRAPPER "")
 set(CMAKE_Fortran_PLATFORM_ID "")
 set(CMAKE_Fortran_SIMULATE_ID "")
 set(CMAKE_Fortran_SIMULATE_VERSION "")
 
 
-set(CMAKE_AR "/usr/bin/ar")
-set(CMAKE_Fortran_COMPILER_AR "/glade/u/apps/dav/opt/gnu/7.3.0/bin/gcc-ar")
-set(CMAKE_RANLIB "/usr/bin/ranlib")
-set(CMAKE_Fortran_COMPILER_RANLIB "/glade/u/apps/dav/opt/gnu/7.3.0/bin/gcc-ranlib")
+set(CMAKE_AR "/bin/ar")
+set(CMAKE_Fortran_COMPILER_AR "/bin/gcc-ar")
+set(CMAKE_RANLIB "/bin/ranlib")
+set(CMAKE_Fortran_COMPILER_RANLIB "/bin/gcc-ranlib")
 set(CMAKE_COMPILER_IS_GNUG77 1)
 set(CMAKE_Fortran_COMPILER_LOADED 1)
 set(CMAKE_Fortran_COMPILER_WORKS TRUE)
@@ -61,7 +61,7 @@ endif()
 
 
 
-set(CMAKE_Fortran_IMPLICIT_INCLUDE_DIRECTORIES "/glade/u/apps/dav/opt/gnu/7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/finclude;/glade/work/cponder/SHARE/Utils/PIO/2_4_2/PGI-19.4_OpenMPI-3.1.4_NetCDF-F-4.4.5/include;/glade/work/cponder/SHARE/Utils/NetCDF-F/4.4.5/PGI-19.4_OpenMPI-3.1.4_NetCDF-C-4.7.0/include;/glade/work/cponder/SHARE/Utils/NetCDF-C/4.7.0/PGI-19.4_OpenMPI-3.1.4_PNetCDF-1.11.1_HDF5-1.10.5/include;/glade/work/cponder/SHARE/Utils/HDF5/1.10.5/PGI-19.4_OpenMPI-3.1.4_SZip-2.1.1_ZLib-1.2.11/include;/glade/work/cponder/SHARE/Utils/PNetCDF/1.11.1/PGI-19.4_OpenMPI-3.1.4/include;/glade/work/cponder/SHARE/Utils/OpenMPI/3.1.4/PGI-19.4_CUDA-10.1.105.0_418.39_HWLoc-1.11.12_ZLib-1.2.11/include;/glade/work/cponder/SHARE/Utils/HWLoc/1.11.12/PGI-19.4_CUDA-10.1.105.0_418.39/include;/glade/work/cponder/SHARE/Utils/ZLib/1.2.11/PGI-19.4/include;/glade/work/cponder/SHARE/Utils/SZip/2.1.1/PGI-19.4/include;/glade/work/cponder/SHARE/Utils/PGI/19.4/linux86-64-nollvm/2019/cuda/10.1/include;/glade/work/cponder/SHARE/Utils/CUDA/10.1.105.0_418.39/nvvm/include;/glade/work/cponder/SHARE/Utils/CUDA/10.1.105.0_418.39/extras/Debugger/include;/glade/work/cponder/SHARE/Utils/CUDA/10.1.105.0_418.39/extras/CUPTI/include;/glade/work/cponder/SHARE/Utils/CUDA/10.1.105.0_418.39/include/CL;/glade/work/cponder/SHARE/Utils/CUDA/10.1.105.0_418.39/samples/common/inc;/glade/work/cponder/SHARE/Utils/CUDA/10.1.105.0_418.39/include;/glade/u/apps/dav/opt/gnu/7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include;/usr/local/include;/glade/u/apps/dav/opt/gnu/7.3.0/include;/glade/u/apps/dav/opt/gnu/7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include-fixed;/usr/include")
+set(CMAKE_Fortran_IMPLICIT_INCLUDE_DIRECTORIES "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/finclude;/glade/work/cponder/SHARE/Utils/PIO/2_4_2/PGI-19.4_OpenMPI-3.1.4_NetCDF-F-4.4.5/include;/glade/work/cponder/SHARE/Utils/NetCDF-F/4.4.5/PGI-19.4_OpenMPI-3.1.4_NetCDF-C-4.7.0/include;/glade/work/cponder/SHARE/Utils/NetCDF-C/4.7.0/PGI-19.4_OpenMPI-3.1.4_PNetCDF-1.11.1_HDF5-1.10.5/include;/glade/work/cponder/SHARE/Utils/HDF5/1.10.5/PGI-19.4_OpenMPI-3.1.4_SZip-2.1.1_ZLib-1.2.11/include;/glade/work/cponder/SHARE/Utils/PNetCDF/1.11.1/PGI-19.4_OpenMPI-3.1.4/include;/glade/work/cponder/SHARE/Utils/OpenMPI/3.1.4/PGI-19.4_CUDA-10.1.105.0_418.39_HWLoc-1.11.12_ZLib-1.2.11/include;/glade/work/cponder/SHARE/Utils/HWLoc/1.11.12/PGI-19.4_CUDA-10.1.105.0_418.39/include;/glade/work/cponder/SHARE/Utils/ZLib/1.2.11/PGI-19.4/include;/glade/work/cponder/SHARE/Utils/SZip/2.1.1/PGI-19.4/include;/glade/work/cponder/SHARE/Utils/PGI/19.4/linux86-64-nollvm/2019/cuda/10.1/include;/glade/work/cponder/SHARE/Utils/CUDA/10.1.105.0_418.39/nvvm/include;/glade/work/cponder/SHARE/Utils/CUDA/10.1.105.0_418.39/extras/Debugger/include;/glade/work/cponder/SHARE/Utils/CUDA/10.1.105.0_418.39/extras/CUPTI/include;/glade/work/cponder/SHARE/Utils/CUDA/10.1.105.0_418.39/include/CL;/glade/work/cponder/SHARE/Utils/CUDA/10.1.105.0_418.39/samples/common/inc;/glade/work/cponder/SHARE/Utils/CUDA/10.1.105.0_418.39/include;/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include;/usr/local/include;/usr/include")
 set(CMAKE_Fortran_IMPLICIT_LINK_LIBRARIES "gfortran;m;gcc_s;gcc;quadmath;m;gcc_s;gcc;c;gcc_s;gcc")
-set(CMAKE_Fortran_IMPLICIT_LINK_DIRECTORIES "/glade/work/cponder/SHARE/Utils/CUDA/10.1.105.0_418.39/nvvm/lib64;/glade/work/cponder/SHARE/Utils/CUDA/10.1.105.0_418.39/extras/Debugger/lib64;/glade/work/cponder/SHARE/Utils/CUDA/10.1.105.0_418.39/extras/CUPTI/lib64;/glade/u/apps/dav/opt/gnu/7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0;/glade/u/apps/dav/opt/gnu/7.3.0/lib64;/lib64;/usr/lib64;/glade/work/cponder/SHARE/Utils/PIO/2_4_2/PGI-19.4_OpenMPI-3.1.4_NetCDF-F-4.4.5/lib;/glade/work/cponder/SHARE/Utils/NetCDF-F/4.4.5/PGI-19.4_OpenMPI-3.1.4_NetCDF-C-4.7.0/lib;/glade/work/cponder/SHARE/Utils/NetCDF-C/4.7.0/PGI-19.4_OpenMPI-3.1.4_PNetCDF-1.11.1_HDF5-1.10.5/lib;/glade/work/cponder/SHARE/Utils/HDF5/1.10.5/PGI-19.4_OpenMPI-3.1.4_SZip-2.1.1_ZLib-1.2.11/lib;/glade/work/cponder/SHARE/Utils/PNetCDF/1.11.1/PGI-19.4_OpenMPI-3.1.4/lib;/glade/work/cponder/SHARE/Utils/OpenMPI/3.1.4/PGI-19.4_CUDA-10.1.105.0_418.39_HWLoc-1.11.12_ZLib-1.2.11/lib;/glade/work/cponder/SHARE/Utils/HWLoc/1.11.12/PGI-19.4_CUDA-10.1.105.0_418.39/lib;/glade/work/cponder/SHARE/Utils/ZLib/1.2.11/PGI-19.4/lib;/glade/work/cponder/SHARE/Utils/SZip/2.1.1/PGI-19.4/lib;/glade/work/cponder/SHARE/Utils/CUDA/10.1.105.0_418.39/lib64/stubs;/glade/work/cponder/SHARE/Utils/CUDA/10.1.105.0_418.39/lib64;/glade/u/apps/dav/opt/gnu/7.3.0/lib")
+set(CMAKE_Fortran_IMPLICIT_LINK_DIRECTORIES "/glade/work/cponder/SHARE/Utils/CUDA/10.1.105.0_418.39/nvvm/lib64;/glade/work/cponder/SHARE/Utils/CUDA/10.1.105.0_418.39/extras/Debugger/lib64;/glade/work/cponder/SHARE/Utils/CUDA/10.1.105.0_418.39/extras/CUPTI/lib64;/usr/lib/gcc/x86_64-redhat-linux/4.8.5;/usr/lib64;/lib64;/glade/work/cponder/SHARE/Utils/PIO/2_4_2/PGI-19.4_OpenMPI-3.1.4_NetCDF-F-4.4.5/lib;/glade/work/cponder/SHARE/Utils/NetCDF-F/4.4.5/PGI-19.4_OpenMPI-3.1.4_NetCDF-C-4.7.0/lib;/glade/work/cponder/SHARE/Utils/NetCDF-C/4.7.0/PGI-19.4_OpenMPI-3.1.4_PNetCDF-1.11.1_HDF5-1.10.5/lib;/glade/work/cponder/SHARE/Utils/HDF5/1.10.5/PGI-19.4_OpenMPI-3.1.4_SZip-2.1.1_ZLib-1.2.11/lib;/glade/work/cponder/SHARE/Utils/PNetCDF/1.11.1/PGI-19.4_OpenMPI-3.1.4/lib;/glade/work/cponder/SHARE/Utils/OpenMPI/3.1.4/PGI-19.4_CUDA-10.1.105.0_418.39_HWLoc-1.11.12_ZLib-1.2.11/lib;/glade/work/cponder/SHARE/Utils/HWLoc/1.11.12/PGI-19.4_CUDA-10.1.105.0_418.39/lib;/glade/work/cponder/SHARE/Utils/ZLib/1.2.11/PGI-19.4/lib;/glade/work/cponder/SHARE/Utils/SZip/2.1.1/PGI-19.4/lib;/glade/work/cponder/SHARE/Utils/CUDA/10.1.105.0_418.39/lib64/stubs;/glade/work/cponder/SHARE/Utils/CUDA/10.1.105.0_418.39/lib64;/usr/lib")
 set(CMAKE_Fortran_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

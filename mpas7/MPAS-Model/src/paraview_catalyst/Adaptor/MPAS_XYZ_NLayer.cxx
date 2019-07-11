@@ -163,7 +163,7 @@ void create_xyz3D_grids(
     pgrid->GetCellData()->AddArray(maskarr);
 
     for (int id = 0; id < totalPrimalCells; id++)
-      rankarr->InsertNextValue((float) rank);
+      rankarr->InsertNextValue((float) ranks);
     rankarr->Delete();
 
     for (int j = 0; j < nPrimalCells; j++) {
@@ -247,7 +247,7 @@ void create_xyz3D_grids(
     dgrid->GetCellData()->AddArray(dmaskarr);
 
     for (int id = 0; id < nActualDualCells; id++)
-      drankarr->InsertNextValue((float) rank);
+      drankarr->InsertNextValue((float) ranks);
     drankarr->Delete();
 
     for (int j = 0; j < nDualCells; j++) {

@@ -1,6 +1,6 @@
 V34 :0x4 rrtmg_lw_init
 20 module_ra_rrtmg_lw.F S624 0
-06/20/2019  14:17:47
+07/09/2019  11:27:20
 use rrlw_wvn public 0 direct
 use rrtmg_lw_setcoef private
 use parkind private

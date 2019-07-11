@@ -1,6 +1,6 @@
 V34 :0x4 rrlw_vsn
 20 module_ra_rrtmg_lw.F S624 0
-06/20/2019  14:17:47
+07/09/2019  11:27:20
 enduse
 D 58 20 12
 D 60 20 13

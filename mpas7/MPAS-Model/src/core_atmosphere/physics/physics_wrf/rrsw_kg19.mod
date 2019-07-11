@@ -1,6 +1,6 @@
 V34 :0x4 rrsw_kg19
 20 module_ra_rrtmg_sw.F S624 0
-06/20/2019  14:17:53
+07/09/2019  11:27:26
 use parrrsw private
 use parkind private
 enduse

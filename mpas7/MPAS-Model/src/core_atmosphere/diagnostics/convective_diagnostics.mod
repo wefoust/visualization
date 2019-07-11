@@ -1,6 +1,6 @@
 V34 :0x4 convective_diagnostics
 24 convective_diagnostics.F S624 0
-06/20/2019  14:18:56
+07/09/2019  11:28:34
 use esmf_clockmod private
 use esmf_alarmmod private
 use esmf_shrtimemod private

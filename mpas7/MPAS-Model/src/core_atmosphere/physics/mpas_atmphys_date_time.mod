@@ -1,6 +1,6 @@
 V34 :0x4 mpas_atmphys_date_time
 24 mpas_atmphys_date_time.F S624 0
-06/20/2019  14:17:12
+07/09/2019  11:26:40
 use pio_types private
 use esmf_clockmod private
 use esmf_alarmmod private

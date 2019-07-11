@@ -43,7 +43,7 @@ using namespace std;
 
 namespace MPAS
 {
-  extern int rank;
+  extern int ranks;
   extern int totalRank;
 
   // Above parameters assigned for primal mesh

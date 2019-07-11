@@ -156,7 +156,7 @@ void create_xy3D_grids(vtkCPDataDescription* data,
     pgrid->GetCellData()->AddArray(rankarr);
 
     for (int id = 0; id < totalPrimalCells; id++)
-      rankarr->InsertNextValue((float) rank);
+      rankarr->InsertNextValue((float) ranks);
     rankarr->Delete();
 
     pgrid->Delete();
@@ -212,7 +212,7 @@ void create_xy3D_grids(vtkCPDataDescription* data,
     dgrid->GetCellData()->AddArray(drankarr);
 
     for (int id = 0; id < nActualDualCells; id++)
-      drankarr->InsertNextValue((float) rank);
+      drankarr->InsertNextValue((float) ranks);
     drankarr->Delete();
 
     dgrid->Delete();

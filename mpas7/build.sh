@@ -15,7 +15,7 @@ module load pio
 #module load paraview
 #module load cmake/3.9.4
 
-module list
+
 which mpif90
 mpif90 -V
 mpif90 -show
@@ -29,6 +29,7 @@ export PARAVIEW=/glade/work/cponder/Applications/ParaView_pgi/build
 #export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/glade/work/cponder/SHARE/Utils/NetCDF-C/4.6.3/PGI-19.3_OpenMPI-3.1.3_PNetCDF-1.11.0_HDF5-1.10.5/lib/
 export PATH=/glade/work/omeara/Downloads/cmake-3.14.5/bin:$PATH
 #export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/glade/work/omeara/visualization/mpas7/MPAS-Model/src/paraview_catalyst/Adaptor-build/
+export LD_LIBRARY_PATH+=:/glade/u/apps/dav/opt/gnu/7.3.0/lib64
 
 echo $LD_LIBRARY_PATH
 

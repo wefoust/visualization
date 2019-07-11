@@ -1,6 +1,6 @@
 V34 :0x4 rrtmg_lw_taumol
 20 module_ra_rrtmg_lw.F S624 0
-06/20/2019  14:17:47
+07/09/2019  11:27:20
 use rrlw_vsn private
 use rrlw_wvn private
 use rrlw_con private

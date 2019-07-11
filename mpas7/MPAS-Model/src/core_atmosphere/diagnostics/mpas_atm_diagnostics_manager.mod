@@ -1,6 +1,6 @@
 V34 :0x4 mpas_atm_diagnostics_manager
 30 mpas_atm_diagnostics_manager.F S624 0
-06/20/2019  14:19:01
+07/09/2019  11:28:40
 use pio_types private
 use esmf_clockmod private
 use esmf_alarmmod private

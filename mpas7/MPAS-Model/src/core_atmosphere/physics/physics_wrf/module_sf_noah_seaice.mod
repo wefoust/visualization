@@ -1,6 +1,6 @@
 V34 :0x4 module_sf_noah_seaice
 23 module_sf_noah_seaice.F S624 0
-06/20/2019  14:18:07
+07/09/2019  11:27:40
 use module_sf_noahlsm private
 use mpas_atmphys_utilities private
 use mpas_atmphys_constants private

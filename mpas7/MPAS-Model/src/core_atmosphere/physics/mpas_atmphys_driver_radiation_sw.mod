@@ -1,6 +1,6 @@
 V34 :0x4 mpas_atmphys_driver_radiation_sw
 34 mpas_atmphys_driver_radiation_sw.F S624 0
-06/20/2019  14:18:23
+07/09/2019  11:27:57
 use esmf_clockmod private
 use esmf_shrtimemod private
 use pio_types private
