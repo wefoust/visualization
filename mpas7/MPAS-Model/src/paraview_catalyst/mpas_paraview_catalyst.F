@@ -252,6 +252,7 @@ module mpas_paraview_catalyst
       real (kind=RKIND), dimension(:,:), pointer :: pressure, theta, exner
       real (kind=RKIND), dimension(:,:), pointer :: temperature 
       block => domain % blocklist
+      call mpas_pool_get_subpool(domain % blocklist % structs, 'diag', diag) 
 
       !tracers => block % state % time_levs(2) % state % tracers % array
       !numTracers = size(tracers, dim=1)
@@ -306,6 +307,7 @@ module mpas_paraview_catalyst
       print *,'checking for COPROCESS ',itime
       call mpas_check_coprocess(itime, doWork)
       if(doWork .eq. 0) then
+         print *,'doWork=0'
          return
       endif
       ! we actually need to do coprocessing
