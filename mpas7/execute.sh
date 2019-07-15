@@ -39,6 +39,7 @@ ulimit -s unlimited
 module list
 export NETCDF=$NETCDF_C
 export NETCDFF=$NETCDF_F
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/glade/work/omeara/visualization/mpas7/MPAS-Model/src/paraview_catalyst/Adaptor-build/
 
 echo $LD_LIBRARY_PATH
 
