@@ -28,7 +28,6 @@ export PATH=/glade/work/omeara/Downloads/cmake-3.14.5/bin:$PATH
 echo $LD_LIBRARY_PATH
 
 cd /gpfs/fs1/work/omeara/visualization/mpas7/MPAS-Model
-#rm -r ./src/paraview_catalyst/Adaptor-build
 
 make clean CORE=atmosphere
-make pgi CORE=atmosphere OPENACC=true PRECISION=single USE_PIO2=true DEBUG=false
+make pgi CORE=atmosphere OPENACC=true PRECISION=single USE_PIO2=true DEBUG=true
