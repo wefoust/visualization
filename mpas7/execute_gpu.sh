@@ -1,13 +1,13 @@
 #!/bin/bash -l
 
 #SBATCH -J MPAS_insitu
-#SBATCH -n 20
+#SBATCH -n 1
 #SBATCH -N 1
-#SBATCH --tasks-per-node=20
+#SBATCH --tasks-per-node=1
 #SBATCH -t 00:10:00
 #SBATCH -p dav
 #SBATCH -A NTDD0002 
-##SBATCH --gres=gpu:v100:1
+#SBATCH --gres=gpu:v100:1
 #SBATCH -o output.out
 #SBATCH -e output.err
 #SBATCH --mem=0
@@ -43,7 +43,7 @@ export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/glade/work/omeara/visualization/mpas7
 
 echo $LD_LIBRARY_PATH
 
-cd /gpfs/fs1/work/omeara/visualization/mpas7/MPAS-A_benchmark_120km_L56
+cd /gpfs/fs1/work/omeara/visualization/mpas7/benchmark
 rm log.atmosphere.*
 
 echo $LDFLAGS
@@ -51,6 +51,6 @@ export PGI_ACC_TIME=1
 
 #the n argument here is number of tasks per node,
 export OMPI_MCA_btl_openib_if_include=mlx5_0
-mpirun -n 20 ./atmosphere_model
+mpirun -n 1 ./atmosphere_model
 #srun --mem=0 --mpi=pmix ./atmosphere_model
 #srun --mem=0 --mpi=pmix nvprof -o output.%h.%p.%q{OMPI_COMM_WORLD_RANK} ./atmosphere_model
