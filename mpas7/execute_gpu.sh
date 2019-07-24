@@ -14,7 +14,8 @@
 ##SBATCH --reservation casper_8xV100
 ##SBATCH --mail-user=omeara@ucar.edu
 ##SBATCH --mail-type=ALL
-
+export TMPDIR=/glade/scratch/omeara/temp
+mkdir -p $TMPDIR
 #Total number of MPI ranks provided by n=N*tasks_per_node
 unset SLURM_MEM_PER_NODE
 module use /glade/work/cponder/SHARE/Modules/Latest
